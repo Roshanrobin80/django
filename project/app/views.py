@@ -9,14 +9,14 @@ def demo1(request,a):
     # a=input('enter an item : ')
     return HttpResponse(a)
 
-def q1(request,a,b):
+def bonus(request,a,b):
     if b>5:
         c=0.05*a
         return HttpResponse(c)
     else:
         return HttpResponse('no change')
 
-def q2(request,a):
+def monument(request,a):
     if a=='delhi':
         return HttpResponse('Redfort')
     elif a=='agra':
@@ -26,14 +26,14 @@ def q2(request,a):
     else:
         return HttpResponse('invalid')
 
-def q3(request,a):
+def div(request,a):
     b=a%10
     if b%3==0:
         return HttpResponse('true')
     else:
         return HttpResponse('false')
     
-def q4(request,a):
+def day(request,a):
     if a==1:
         return HttpResponse('Sunday')
     elif a==2:
@@ -51,7 +51,7 @@ def q4(request,a):
     else:
         return HttpResponse('invalid')
     
-def q5(request,a):
+def tax(request,a):
     if a>100000:
         b=a*15/100
         total=a+b
@@ -65,7 +65,7 @@ def q5(request,a):
         total=a+b
         return HttpResponse(total)
     
-def q6(request,a):
+def elec(request,a):
     if a<100:
         return HttpResponse("Your unit price = 0")
     else:
@@ -77,4 +77,8 @@ def q6(request,a):
             ui=a-200
             us=ui*10+500
             return HttpResponse(us)
+        
+def demo(req):
+    a={'name':'roshan','age':21}
+    return render(req,'demo.html',{'data':a})
 

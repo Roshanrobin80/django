@@ -11,7 +11,9 @@ urlpatterns=[
     path('day/<int:a>',views.day),
     path('tax/<int:a>',views.tax),
     path('elec/<int:a>',views.elec),
-    path('demo',views.demo)
+    path('demo',views.demo),
+    path('display',views.display),
+    path('user_reg',views.user_reg)
 
 
 ]

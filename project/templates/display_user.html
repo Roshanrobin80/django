@@ -5,58 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
-            width: 600px;
-        }
-        table,th,td{
-            border: 1px solid black;
-
-        }
-    </style>
-</head>
-<body>
-    <form action="user_reg" method="post">
-        {% csrf_token %}
-        ID<input type="text" name="id"> <br>
-        Name <input type="text" name="name"> <br>
-        Age <input type="number" name="age"><br>
-        Email <input type="text" name="email"><br>
-        <input type="submit" value="add"       >
-    </form>
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Email</th>
-        </tr>
-        {% for i in users %}
-        <tr>
-            <td>{{i.id}}</td>
-            <td>{{i.name}}</td>
-            <td>{{i.age}}</td>
-            <td>{{i.email}}</td>
-        </tr>
-        {% endfor %}
-    </table>
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
         .tbl{
             width: 500px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 10px;
-            background-color: rgb(174, 150, 197);
+            background-color: white;
         }
         .tbl,td,th{
             border: 2px solid black;
@@ -79,15 +33,15 @@
             border: 0;
         }
         input{
-            background-color: rgb(121, 190, 190);
+            background-color: tan;
         }
         
     </style>
 </head>
-<body style="background-color: rgb(241, 225, 151);">
+<body style="background-color: cyan;">
       <h3 >REGISTRATION</h3>
     <form action="user_reg" method="post">
-        {% csrf_token%}
+        {% csrf_token %}
          <table class="reg">
             <tr >
                 <th class="t1">ID</th>
@@ -126,6 +80,10 @@
         <td>{{i.name}}</td>
         <td>{{i.age}}</td>
         <td>{{i.email}}</td>
+        <td>
+        <a href="edit_user/{{i.id}}">Edit</a>
+        <a href="delete_user/{{i.id}}">Delete</a>
+    </td>
     </tr>
     {% endfor %}
 
@@ -134,3 +92,65 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+        }
+        table,th,td{
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="user_reg" method="post">
+        {% csrf_token %}
+        ID<input type="text" name="id"> <br>
+        Name <input type="text" name="name"> <br>
+        Age <input type="number" name="age"><br>
+        Email <input type="text" name="email"><br>
+        <input type="submit" value="add"       >
+    </form>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+        {% for i in users %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html> -->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;" >
+    <h3>EDIT PAGE</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        ID <input type="text" name="id" value="{{user.id}}" ><br>
+        Name <input type="text" name="id" value="{{user.name}}"><br>
+        Age <input type="number" name="id" value="{{user.age}}"><br>
+        Email <input type="email" name="id" value="{{user.email}}"><br>
+        <input type="submit" value="Edit">
+
+    </form>
+</body>
+</html>

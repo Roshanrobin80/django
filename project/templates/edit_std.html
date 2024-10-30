@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Edit std</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="number" name="roll_no" placeholder="roll_no" value="{{data.roll_no}}">
+        <input type="text" name="name" placeholder="name" value="{{data.name}}">
+        <input type="number" name="age" placeholder="age" value="{{data.age}}">
+        <input type="email" name="email" placeholder="email" value="{{data.email}}">
+        <input type="submit" value="Edit">
+    </form>
+</body>
+</html>

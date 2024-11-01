@@ -9,6 +9,8 @@ urlpatterns=[
 #------------------shop----------------------
 
     path('shop_home',views.shop_home),
+    path('add_pro',views.add_pro),
+
 
 
 

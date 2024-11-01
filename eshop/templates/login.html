@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+    input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor="coral">
+<body>
     <form action="" method="post">
         {% csrf_token %}
-        <input type="text" name="uname" id="" placeholder="username" style="margin-left: 750px; padding: 1px;"><br>
-        <input type="password" name="pswd" id="" placeholder="password" style="margin-left: 750px; padding: 1px;"><br>
-        <input type="submit" value="Login" style="margin-left: 750px; padding: 1px;">
+    <label for="fname">Username</label>
+    <input type="text" id="uname" name="uname"><br>
+    <label for="lname">Password</label>
+    <input type="text" id="pswd" name="pswd">
+    <div class="row">
+        <input type="submit" value="Login" style="padding: 10px; ">
+    </div>
 
         </form>
 </body>

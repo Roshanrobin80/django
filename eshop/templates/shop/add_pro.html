@@ -15,37 +15,46 @@
         justify-content: center;
         align-items: center;
     }
+    body{
+        background-color: gray;
+    }
 </style>
 </head>
 <body>
     <div class="form-container">
     <div>
     <h2>Add product</h2>
-    <form action="/action_page.php">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
         <div class="mb-3 mt-3">
-            <label for="pr">product id:</label>
-            <input type="number" class="form-control" id="pproduct id" placeholder="product id" name="pr">
+            <label for="pr">Product id:</label>
+            <input type="text" class="form-control" id="pproduct id" placeholder="product id" name="pro_id">
         </div>
         <div class="mb-3">
             <label for="pwd">Name:</label>
-            <input type="text" class="form-control" id="pwd" placeholder="Enter name" name="pswd">
+            <input type="text" class="form-control" id="pwd" placeholder="Enter name" name="name">
         </div>
                 <div class="mb-3">
-                    <label for="pwd">price</label>
-                    <input type="number" class="form-control" id="pwd" placeholder="Enter price" name="pswd">
+                    <label for="pwd">Price</label>
+                    <input type="number" class="form-control" id="pwd" placeholder="Enter price" name="price">
                 </div>
 
                         <div class="mb-3">
-                            <label for="pwd">offer price</label>
-                            <input type="number" class="form-control" id="pwd" placeholder="Enter offer price" name="pswd">
+                            <label for="pwd">Offer price</label>
+                            <input type="number" class="form-control" id="pwd" placeholder="Enter offer price" name="offer_price">
                         </div>
 
                                         <div class="mb-3">
-                                            <label for="pwd">description</label>
-                                            <input type="text" class="form-control" id="pwd" placeholder="Enter description" name="pswd">
+                                            <label for="pwd">Description</label>
+                                            <input type="text" class="form-control" id="pwd" placeholder="Enter description" name="des">
                                         </div>
 
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <div class="mb-3">
+                                                            <label for="pwd">Image</label>
+                                                            <input type="file" class="form-control" id="pwd"  name="img">
+                                                    </div>
+
+                                                            <button type="submit" class="btn btn-primary">Add</button>
 
         </div>
 

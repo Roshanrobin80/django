@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate,login,logout
 from .models import *
 import os
 from django.contrib.auth.models import User
+from django.contrib import messages
 
 # Create your views here.
 
@@ -94,6 +95,7 @@ def register(req):
             data.save()
             return redirect(shop_login)
         except:
+            messages.warning(req,"email already exists")
             return redirect(register)
     else:
         return render(req,'user/register.html')

@@ -42,6 +42,9 @@ def shop_home(req):
         return render(req,'shop/home.html',{'products':data})
     else:
         return redirect(shop_login)
+    
+#-------------------------------admin-----------------------------
+
 
 def add_pro(req):
     if 'shop' in req.session:
@@ -94,6 +97,11 @@ def delete_product(req,pid):
     return redirect(shop_home)
 
 
+
+#----------------------------------user----------------------------
+
+
+
 def register(req):
     if req.method=='POST':
         name=req.POST['name']
@@ -130,12 +138,14 @@ def add_to_cart(req,pid):
 def view_cart(req):
     user=User.objects.get(username=req.session['user'])
     cart_dtls=Cart.objects.filter(user=user)
-    return render(req,'user/cart.html',{'cart dtls':cart_dtls})
+    return render(req,'user/cart.html',{'cart_dtls':cart_dtls})
 
 def delete_cart(req,id):
     cart=Cart.objects.get(pk=id)
     cart.delete()
     return redirect(view_cart)
+
+#cart buy
 
 def user_buy(req,cid):
     user=User.objects.get(username=req.session['user'])
@@ -144,7 +154,10 @@ def user_buy(req,cid):
     price=cart.product.offer_price
     buy=Buy.objects.create(user=user,product=product,price=price)
     buy.save()
+    cart.delete()
     return redirect(view_cart)
+
+#product buy
 
 def user_buy1(req,pid):
     user=User.objects.get(username=req.session['user'])
@@ -153,6 +166,12 @@ def user_buy1(req,pid):
     buy=Buy.objects.create(user=user,product=product,price=price)
     buy.save()
     return redirect(user_home)
+
+def user_bookings(req):
+    user=User.objects.get(username=req.session['user'])
+    buy=Buy.objects.filter(user=user)[::-1]
+    return render(req,'user/bookings.html',{'buy':buy})
+
 
 
 

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK MY SHOW DEMO</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-gray">
+        <div class="container-fluid"> <a class="navbar-brand" href="#">
+                <img src="{% static 'images/bms bl.png' %}' %}" width="70px" height="70px" alt="Logo" style="color: white;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <form class="d-flex" style="width:400px;padding-left: 90px;">
+                        <input class="form-control me-2" type="text" placeholder="Search for a movie or shows">
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" style="color:black;padding-left: 680px;">Kochi<i
+                                class="fa-solid fa-angle-down" style="padding-left: 10px;"></i></a>
+                    </li>
+                    <div style="padding-right:20px">
+                        <button class="btn btn-danger" type="button">Sign in</button>
+                    </div>
+                    <div><i class="fa-solid fa-bars"></i></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="nav2" class=" second-navbar d-none d-md-block" style="background-color: rgb(247, 245, 245);">
+        <div id="navrow" class="row container  pt-2">
+            <div class="col-auto ">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Movies</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Stream</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Events</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Plays</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Sports</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Activities</p>
+                </a>
+            </div>
+
+
+            <div id="navrow2" class="col-auto ms-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">ListYourShow</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Corporates</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Offers</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a class="text-decoration-none" href="#">
+                    <p class="text-black">Gift Cards</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="demo" class="carousel slide container-fluid rounded-carousel" data-bs-ride="carousel"
+        data-bs-interval="1500" style="width: 100%;padding-top: 20px;">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/cor1.jpg' %}" alt="#1" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/cor2.jpg' %}" alt="#2" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/cor3.jpg' %}" alt="#3" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container container-fluid mt-5 my-5" style="margin-left: 100px;">
+        <b id="text" class="text-black" style="font-size: 1.9vw;">Recommented movies</b>
+        <a href="" style="padding-left: 780px;text-decoration: none;color: red;">See All></a>
+        <div class="row ">
+            <div class="col-md-2">
+                <a href="arm"><img src="{% static 'images/mv2.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="" style="text-decoration: none;color: black;">
+                    <figcaption style="padding-left: 30px;"><b>A.R.M</b> <br> U/A <br> Malayalam</figcaption>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="{% static 'images/mv1.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="" style="text-decoration: none;color: black;">
+                    <figcaption style="padding-left: 30px;"><b>Kishkindha Kandam</b> <br> U/A <br> Malayalam
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="{% static 'images/mv3.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="" style="text-decoration: none;color: black;">
+                    <figcaption style="padding-left: 30px;"><b>Vettaiyan</b> <br> U/A <br> Tamil</figcaption>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="{% static 'images/mv4.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="" style="text-decoration: none;color: black;">
+                    <figcaption style="padding-left: 30px;"><b>Martin</b> <br> U/A <br> Kannada</figcaption>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="{% static 'images/mv5.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="" style="text-decoration: none;color: black;">
+                    <figcaption style="padding-left: 30px;"><b>Bogainvilla</b> <br> U/A <br> Malayalam</figcaption>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="{% static 'images/mv6.avif' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="" style="text-decoration: none;color: black;">
+                    <figcaption style="padding-left: 30px;"><b>Oru Kattil Oru Muri</b> <br> U/A <br> Malayalam
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-fluid my-4">
+        <img class="img-fluid" src="{% static 'images/stream.png' %}" alt="">
+    </div>
+    <div class="container container-fluid my-5">
+        <h4>The Best Of Live Events</h4>
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <img width="100%" src="{% static 'images/best1.avif' %}" alt="">
+            </div>
+            <div class="col-md-2 mt-2">
+                <img width="100%" src="{% static 'images/best2.avif' %}" alt="">
+            </div>
+            <div class="col-md-2 mt-2">
+                <img width="100%" src="{% static 'images/best3.avif' %}" alt="">
+            </div>
+            <div class="col-md-2 mt-2">
+                <img width="100%" src="{% static 'images/best4.avif' %}" alt="">
+            </div>
+            <div class="col-md-2 mt-2">
+                <img width="100%" src="{% static 'images/best5.avif' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="premi" class="container-fluid my-5 d-flex flex-column ">
+        <img id="pre" class="img-fluid" src="{% static 'images/Prem.png' %}" alt="">
+
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <div class="movie-card">
+                    <img src="{% static 'images/pr1.avif' %}" alt="">
+                    <div id="mov" class="movie-details">
+                        <h5 class="movie-title">Sidone in japan</h5>
+                        <p id="mov" class="movie-genre">French</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="movie-card">
+                    <img src="{% static 'images/pr2.avif' %}" alt="">
+                    <div class="movie-details">
+                        <h5 id="mov" class="movie-title">The Good The Bad The Weird</h5>
+                        <p id="mov" class="movie-genre">English</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="movie-card">
+                    <img src="{% static 'images/pr3.avif' %}" alt="">
+                    <div class="movie-details">
+                        <h5 id="mov" class="movie-title">Bang Bang!</h5>
+                        <p id="mov" class="movie-genre">Hindi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="movie-card">
+                    <img src="{% static 'images/pr4.avif' %}" alt="">
+                    <div class="movie-details">
+                        <h5 id="mov" class="movie-title">The Layoff Party</h5>
+                        <p id="mov" class="movie-genre">Hindi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="movie-card">
+                    <img src="{% static 'images/pr5.avif' %}" alt="">
+                    <div class="movie-details">
+                        <h5 id="mov" class="movie-title">Shyamchi Aai</h5>
+                        <p id="mov" class="movie-genre">Marathi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="overflow-y: hidden;" class="footer py-3 d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center text-md-start">
+                <div class="col-md-10">
+                    <p class="text-white" style="white-space: nowrap;">
+                        <a href="#" class=" footer-logo text-white fw-bold text-decoration-none"><img
+                                src="{% static 'images/icon1.png' %}" alt="">List your Show &nbsp; &nbsp;</a>
+                        Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
+                        <a id="contact" href="#" class="btn btn-danger ">Contact today! </a>
+                    </p>
+                </div>
+
+                <div id="row" class="row justify-content-center">
+                    <div class="icon-box col-12 col-md-4 col-lg-3 mb-3 text-center ">
+                        <i style="font-size: 30px;padding-top: 20px;" class="fa-regular fa-user fa-xm my-1 "></i>
+                        <p class="">24/7 Customer Care</p>
+                    </div>
+                    <div class="icon-box col-12 col-md-4 col-lg-3 mb-3 text-center">
+                        <i style="font-size: 30px;padding-top: 20px;" class="fa-solid fa-ticket my-1"></i>
+                        <p>Resend Booking Confirmation</p>
+                    </div>
+                    <div class="icon-box col-12 col-md-4 col-lg-3 mb-3 text-center">
+                        <i style="font-size: 30px;padding-top: 20px;" class="fa-regular fa-envelope my-1"></i>
+                        <p>Subscribe to the Newsletter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <h4 id="heading">MOVIES NOW SHOWING IN KOCHI</h4>
+                <p class="para"><a id="text1" href="">vettaiyan</a> |
+                    <a id="text1" href="">A.R.M</a> |
+                    <a id="text1" href="">Kishkindha Kaandam</a> |
+                    <a id="text1" href="">Venom: The Last Dance</a> |
+                    <a id="text1" href="">Jocker: Folie a Deux</a> |
+                    <a id="text1" href="">Thekku Vadakku</a> |
+                    <a id="text1" href="">Pushpaka Vimanam</a> |
+                    <a id="text1" href="">Maliyaxhagan</a> |
+                    <a id="text1" href="">Oru Kattil oru muri</a> |
+                </p>
+            </div>
+            <div class="container mt-3">
+                <h4 id="heading">MOVIES NOW SHOWING IN KOCHI</h4>
+                <p class="para"><a id="text1" href="">vettaiyan</a> |
+                    <a id="text1" href="">A.R.M</a> |
+                    <a id="text1" href="">Kishkindha Kaandam</a> |
+                    <a id="text1" href="">Venom: The Last Dance</a> |
+                    <a id="text1" href="">Jocker: Folie a Deux</a> |
+                    <a id="text1" href="">Thekku Vadakku</a> |
+                    <a id="text1" href="">Pushpaka Vimanam</a> |
+                    <a id="text1" href="">Maliyaxhagan</a> |
+                    <a id="text1" href="">Oru Kattil oru muri</a> |
+                </p>
+            </div>
+            <div class="container mt-3">
+                <h4 id="heading">MOVIES BY GENRE</h4>
+                <p class="para"><a id="text1" href="">Drama Movies</a> |
+                    <a id="text1" href="">Action Movies</a> |
+                    <a id="text1" href="">Thriller Movies</a> |
+                    <a id="text1" href="">Period Movies</a> |
+                    <a id="text1" href="">Horror Movies</a> |
+                    <a id="text1" href="">Fantasy Movies</a> |
+                    <a id="text1" href="">Suspense Movies</a> |
+                    <a id="text1" href="">Romantic Movies</a> |
+                    <a id="text1" href="">Comady Movies</a> |
+                </p>
+            </div>
+            <div class="container mt-3">
+                <h4 id="heading">MOVIES BY LANGUAGE</h4>
+                <p class="para"><a id="text1" href="">Movies in English</a> |
+                    <a id="text1" href="">Movies in Malayalam</a> |
+                    <a id="text1" href="">Movies in Tamil</a> |
+                    <a id="text1" href="">Movies in Kannada</a> |
+                    <a id="text1" href="">Movies in telugu</a> |
+                    <a id="text1" href="">Movies in Hindi</a> |
+                    <a id="text1" href="">Movies in sindihi</a> |
+                    <a id="text1" href="">Movies in bengali</a> |
+                    <a id="text1" href="">Movies in marathi</a> |
+                </p>
+            </div>
+            <div class="container mt-3">
+                <h4 id="heading">SPORTS EVENTS IN KOCHI</h4>
+                <p class="para">
+                    <a href="" id="text1">Running</a> |
+                    <a href="" id="text1">Kabaddi</a> |
+                    <a href="" id="text1">Athletics</a> |
+                    <a href="" id="text1">Motorsports</a> |
+                    <a href="" id="text1">Card Games</a> |
+                    <a href="" id="text1">Hockey</a> |
+                    <a href="" id="text1">Rugby</a> |
+                    <a href="" id="text1">Badminton</a> |
+                    <a href="" id="text1">Boxing</a> |
+                    <a href="" id="text1">Pool</a>
+                </p>
+
+                <h4 id="heading">EVENTS IN TOP CITIES</h4>
+                <p class="para">
+                    <a href="" id="text1">Events in Mumbai</a> |
+                    <a href="" id="text1">Events in Delhi-NCR</a> |
+                    <a href="" id="text1">Events in Bengaluru</a> |
+                    <a href="" id="text1">Events in Hyderabad</a> |
+                    <a href="" id="text1">Events in Pune</a> |
+                    <a href="" id="text1">Events in Ahmedabad</a> |
+                    <a href="" id="text1">Events in Kolkata</a> |
+                    <a href="" id="text1">Events in Kochi</a>
+                </p>
+
+                <h4 id="heading">CINEMAS IN TOP CITIES</h4>
+                <p class="para">
+                    <a href="" id="text1">Cinemas in Mumbai</a> |
+                    <a href="" id="text1">Cinemas in Delhi-NCR</a> |
+                    <a href="" id="text1">Cinemas in Chennai</a> |
+                    <a href="" id="text1">Cinemas in Bengaluru</a> |
+                    <a href="" id="text1">Cinemas in Hyderabad</a> |
+                    <a href="" id="text1">Cinemas in Pune</a> |
+                    <a href="" id="text1">Cinemas in Ahmedabad</a> |
+                    <a href="" id="text1">Cinemas in Kolkata</a> |
+                    <a href="" id="text1">Cinemas in Kochi</a>
+                </p>
+
+                <h4 id="heading">PLAYS IN TOP CITIES</h4>
+                <p class="para">
+                    <a href="" id="text1">Plays in Mumbai</a> |
+                    <a href="" id="text1">Plays in Delhi-NCR</a> |
+                    <a href="" id="text1">Plays in Chennai</a> |
+                    <a href="" id="text1">Plays in Bengaluru</a> |
+                    <a href="" id="text1">Plays in Hyderabad</a> |
+                    <a href="" id="text1">Plays in Pune</a> |
+                    <a href="" id="text1">Plays in Kolkata</a> |
+                    <a href="" id="text1">Plays in Kochi</a>
+                </p>
+
+                <h4 id="heading">ACTIVITIES IN TOP CITIES</h4>
+                <p class="para">
+                    <a href="" id="text1">Activities in Mumbai</a> |
+                    <a href="" id="text1">Activities in Delhi-NCR</a> |
+                    <a href="" id="text1">Activities in Chennai</a> |
+                    <a href="" id="text1">Activities in Bengaluru</a> |
+                    <a href="" id="text1">Activities in Hyderabad</a> |
+                    <a href="" id="text1">Activities in Pune</a> |
+                    <a href="" id="text1">Activities in Ahmedabad</a> |
+                    <a href="" id="text1">Activities in Kolkata</a> |
+                    <a href="" id="text1">Activities in Kochi</a>
+                </p>
+
+                <h4 id="heading">MOVIES NOW SHOWING</h4>
+                <p class="para">
+                    <a href="" id="text1">Vettaiyan</a> |
+                    <a href="" id="text1">Vicky Vidya ka Woh Wala Video</a> |
+                    <a href="" id="text1">Jigra</a> |
+                    <a href="" id="text1">Martin</a> |
+                    <a href="" id="text1">Vettaiyan - The Hunter</a> |
+                    <a href="" id="text1">Devara - Part 1</a> |
+                    <a href="" id="text1">Viswam</a> |
+                    <a href="" id="text1">The House of Dead Horror</a> |
+                    <a href="" id="text1">Wild Roller Coaster</a> |
+                    <a href="" id="text1">Bohurupi</a>
+                </p>
+
+                <h4 id="heading">COUNTRIES</h4>
+                <p class="para">
+                    <a href="" id="text1">Indonesia</a> |
+                    <a href="" id="text1">Singapore</a> |
+                    <a href="" id="text1">UAE</a> |
+                    <a href="" id="text1">Sri Lanka</a> |
+                    <a href="" id="text1">West Indies</a>
+                </p>
+
+                <h4 id="heading">HELP</h4>
+                <p class="para">
+                    <a href="" id="text1">About Us</a> |
+                    <a href="" id="text1">Contact Us</a> |
+                    <a href="" id="text1">Current Opening</a> |
+                    <a href="" id="text1">Press Release</a> |
+                    <a href="" id="text1">Press Coverage</a> |
+                    <a href="" id="text1">Sitemap</a> |
+                    <a href="" id="text1">FAQs</a> |
+                    <a href="" id="text1">Terms and Conditions</a> |
+                    <a href="" id="text1">Privacy Policy</a>
+                </p>
+
+                <h4 id="heading">BOOKMYSHOW EXCLUSIVES</h4>
+                <p class="para">
+                    <a href="" id="text1">Lollapalooza India</a> |
+                    <a href="" id="text1">Superstar</a> |
+                    <a href="" id="text1">BookAChange</a> |
+                    <a href="" id="text1">Corporate Vouchers</a> |
+                    <a href="" id="text1">Gift Cards</a> |
+                    <a href="" id="text1">List My Show</a> |
+                    <a href="" id="text1">Offers</a> |
+                    <a href="" id="text1">Stream</a> |
+                    <a href="" id="text1">Trailers</a>
+                </p>
+            </div>
+            <div class="line mt-5">
+                <hr class="left-line">
+                <img src="{% static 'images/logo.svg" alt="Logo" class="logo">
+                <hr class="right-line">
+            </div>
+            <div class=" social mt-5 d-flex justify-content-center ">
+                <i id="social1" class="fa-brands fa-facebook-f mx-2"></i>
+                <i id="social1" class="fa-brands fa-x-twitter mx-2"></i>
+                <i id="social1" class="fa-brands fa-instagram mx-2"></i>
+                <i id="social1" class="fa-brands fa-youtube mx-2"></i>
+                <i id="social1" class="fa-brands fa-pinterest-p mx-2"></i>
+                <i id="social1" class="fa-brands fa-linkedin-in mx-2"></i>
+                </p>
+            </div>
+
+            <div class="text-center  ">
+                <p id="text2" class="mt-5 ">copyright 2024 @ Bigtree Entertainment Pvt Ltd. All rights reserved.</p>
+                <p id="text2">The content and image used on this site are copyright protected and copyrights vests with
+                    the
+                    respective owners. The usage of the content and image on this website is intended to promote the
+                    work
+                    and no endorsement of the
+                    artist shall be implied. Unauthorized use is prohibited and punishable by law.
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOK MY SHOW DEMO</title>
+    {% load static %}
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
  <!-- --------------------- Navbar Starting -------------------------   -->
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-gray">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)" style="color:black"><img src="images/bms bl.png" width="70px" height="70px" alt=""></a>
+    <a class="navbar-brand" href="javascript:void(0)" style="color:black"><img src="{% static 'images/bms bl.png' %}" width="70px" height="70px" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -100,7 +102,7 @@
         Movie Card 1
         <div class="col-md-4">
             <div class="movie-card" >
-                <img src="images/mv2.jpg" alt="A.R.M" style="height: 360px; width: 260px;"> 
+                <img src="{% static 'images/mv2.jpg' %}" alt="A.R.M" style="height: 360px; width: 260px;"> 
                 <div class="movie-details">
                     <div class="movie-stats" style="background-color: #000000">
                         <span> In Cinemas</span>
@@ -154,31 +156,31 @@
   <div class="carousel-item active">
     <div class="d-flex gap-2">
     <div>
-    <img src="images/cs1.avif" class=" d-inline rounded-circle" style="width:150px;" alt="">
+    <img src="{% static 'images/cs1.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt="">
     <figcaption style="text-align: center;">Tovino Thomas</figcaption> 
    </div>
    <div>
-    <img src="images/cs2.avif" class=" d-inline rounded-circle" style="width:150px;" alt="">
+    <img src="{% static 'images/cs2.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt="">
     <figcaption style="text-align: center;">Krithi</figcaption>
    </div>
    <div>
-    <img src="images/cs3.avif" class=" d-inline rounded-circle" style="width:150px;" alt="">
+    <img src="{% static 'images/cs3.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt="">
     <figcaption style="text-align: center;">Aiswarya</figcaption>
     </div> 
     <div>
-    <img src="images/cs4.avif" class=" d-inline rounded-circle" style="width:150px;" alt=""> 
+    <img src="{% static 'images/cs4.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt=""> 
     <figcaption style="text-align: center;">Surabhi</figcaption>
     </div>
     <div>
-    <img src="images/cs5.avif" class=" d-inline rounded-circle" style="width:150px;" alt="">
+    <img src="{% static 'images/cs5.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt="">
     <figcaption style="text-align: center;">Basil</figcaption>
     </div>
     <div> 
-    <img src="images/cs6.avif" class=" d-inline rounded-circle" style="width:150px;" alt="">
+    <img src="{% static 'images/cs6.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt="">
     <figcaption style="text-align: center;">Harish</figcaption>
     </div>
     <div> 
-    <img src="images/cs7.avif" class=" d-inline rounded-circle" style="width:150px;" alt="">
+    <img src="{% static 'images/cs7.avif' %}" class=" d-inline rounded-circle" style="width:150px;" alt="">
     <figcaption style="text-align: center;">Madhupal</figcaption> 
    </div>
 </div>
@@ -188,31 +190,31 @@
   <div class="carousel-item">
     <div class="d-flex gap-2">
         <div>
-        <img src="images/cs8.avif" class=" d-inline rounded-circle" style="width:165px;" alt="">
+        <img src="{% static 'images/cs8.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt="">
         <figcaption style="text-align: center;">Rohini</figcaption> 
        </div>
        <div>
-        <img src="images/cs9.avif" class=" d-inline rounded-circle" style="width:165px;" alt="">
+        <img src="{% static 'images/cs9.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt="">
         <figcaption style="text-align: center;">Aju varghese</figcaption>
        </div>
        <div>
-        <img src="images/cs10.avif" class=" d-inline rounded-circle" style="width:165px;" alt="">
+        <img src="{% static 'images/cs10.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt="">
         <figcaption style="text-align: center;">Kabir</figcaption>
         </div> 
         <div>
-        <img src="images/cs11.avif" class=" d-inline rounded-circle" style="width:165px;" alt=""> 
+        <img src="{% static 'images/cs11.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt=""> 
         <figcaption style="text-align: center;">Jagadeesh</figcaption>
         </div>
         <div>
-        <img src="images/cs12.avif" class=" d-inline rounded-circle" style="width:165px;" alt="">
+        <img src="{% static 'images/cs12.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt="">
         <figcaption style="text-align: center;">Sudheesh</figcaption>
         </div>
         <div> 
-        <img src="images/cs13.avif" class=" d-inline rounded-circle" style="width:165px;" alt="">
+        <img src="{% static 'images/cs13.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt="">
         <figcaption style="text-align: center;">Nisthar</figcaption>
         </div>
         <div> 
-            <img src="images/cs14.avif" class=" d-inline rounded-circle" style="width:165px;" alt="">
+            <img src="{% static 'images/cs14.avif' %}" class=" d-inline rounded-circle" style="width:165px;" alt="">
             <figcaption style="text-align: center;">Maala</figcaption>
             </div>
   </div>   
@@ -236,33 +238,33 @@
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-6 g-4">
 <div class="col">
-    <img src="images/cr1.avif" class="img-fluid rounded-circle" alt="">
+    <img src="{% static 'images/cr1.avif' %}" class="img-fluid rounded-circle" alt="">
     <figcaption style="text-align: center;">Jithin Laal</figcaption> 
     <figcaption class="text-secondary" style=" text-align: center;">Director</figcaption> 
 
 </div>
 <div class="col">
-    <img src="images/cr2.avif" class="img-fluid rounded-circle" alt="">
+    <img src="{% static 'images/cr2.avif' %}" class="img-fluid rounded-circle" alt="">
     <figcaption style="text-align: center;">Listin Stephen</figcaption>
     <figcaption class="text-secondary" style=" text-align: center;">Producer</figcaption> 
 </div>
 <div class="col">
-    <img src="images/cr3.avif" class="img-fluid rounded-circle" alt="">
+    <img src="{% static 'images/cr3.avif' %}" class="img-fluid rounded-circle" alt="">
     <figcaption style="text-align: center;">Suijith Nambiar</figcaption>
     <figcaption class="text-secondary" style=" text-align: center;">Writer</figcaption> 
 </div> 
 <div class="col">
-    <img src="images/cr4.avif" class="img-fluid rounded-circle" alt=""> 
+    <img src="{% static 'images/cr4.avif' %}" class="img-fluid rounded-circle" alt=""> 
     <figcaption style="text-align: center;">Dhibu Ninan</figcaption>
     <figcaption class="text-secondary" style=" text-align: center;">Musician</figcaption> 
 </div>
 <div class="col">
-    <img src="images/cr5.avif" class="img-fluid rounded-circle" alt="">
+    <img src="{% static 'images/cr5.avif' %}" class="img-fluid rounded-circle" alt="">
     <figcaption style="text-align: center;">Jomon T</figcaption>
     <figcaption class="text-secondary" style=" text-align: center;">Cinematography</figcaption> 
 </div>
 <div class="col"> 
-    <img src="images/cr6.avif" class="img-fluid rounded-circle" alt="">
+    <img src="{% static 'images/cr6.avif' %}" class="img-fluid rounded-circle" alt="">
     <figcaption style="text-align: center;">Shameer</figcaption>
     <figcaption class="text-secondary" style=" text-align: center;">Editor</figcaption> 
 </div>
@@ -350,7 +352,7 @@
               <div id="revbox" class="col-md-5 mb-4">
                 <div class="card border-light p-3">
                   <div class="d-flex align-items-center mb-3">
-                    <img src="images/icon.jpg" width="50" height="50" alt="User" class="rounded-circle me-3">
+                    <img src="{% static 'images/icon.jpg' %}" width="50" height="50" alt="User" class="rounded-circle me-3">
                     <h6 class="mb-0">user1003</h6>
                     <span class="ms-auto text-dark"><i class="fa fa-star text-danger"></i>10/10 </span>
                   </div>
@@ -371,7 +373,7 @@
               <div id="revbox" class="col-md-5 mb-4">
                 <div class="card border-light p-3">
                   <div class="d-flex align-items-center mb-3">
-                    <img src="images/icon.jpg" width="50" height="50" alt="User" class="rounded-circle me-3">
+                    <img src="{% static 'images/icon.jpg' %}" width="50" height="50" alt="User" class="rounded-circle me-3">
                     <h6 class="mb-0">User1002</h6>
                     <span class="ms-auto text-dark"><i class="fa fa-star text-danger"></i>8/10 </span>
                   </div>
@@ -398,7 +400,7 @@
               <div id="revbox" class="col-md-5 mb-4">
                 <div  class="card border-light p-3">
                   <div class="d-flex align-items-center mb-3">
-                    <img src="images/icon.jpg" width="50" height="50" alt="User" class="rounded-circle me-3">
+                    <img src="{% static 'images/icon.jpg' %}" width="50" height="50" alt="User" class="rounded-circle me-3">
                     <h6 class="mb-0">user1001</h6>
                     <span class="ms-auto text-dark"><i class="fa fa-star text-danger"></i>9/10 </i></span>
                   </div>
@@ -419,7 +421,7 @@
               <div id="revbox" class="col-md-5 mb-4">
                 <div class="card border-light p-3">
                   <div class="d-flex align-items-center mb-3">
-                    <img src="images/icon.jpg" width="50" height="50" alt="User" class="rounded-circle me-3">
+                    <img src="{% static 'images/icon.jpg' %}" width="50" height="50" alt="User" class="rounded-circle me-3">
                     <h6 class="mb-0">user1000</h6>
                     <span class="ms-auto text-dark"><i class="fa fa-star text-danger"></i>7/10 </span>
                   </div>
@@ -465,7 +467,7 @@
 <div id="revbox" class="col-md-5 mb-4">
   <div  class="card border-light p-3">
     <div class="d-flex align-items-center mb-3">
-      <img src="images/icon.jpg" width="50" height="50" alt="User" class="rounded-circle me-3">
+      <img src="{% static 'images/icon.jpg' %}" width="50" height="50" alt="User" class="rounded-circle me-3">
       <h6 class="mb-0">The Indian Express</h6>
       <span class="ms-auto text-dark"><i class="fa fa-star text-danger"></i>7/10 </i></span>
     </div>
@@ -495,7 +497,7 @@
         <div class="col-md-12 col-lg-3">
             <a class="text-decoration-none text-black" href="2ndpage.html">
                 <div class="movie-card">
-                    <img src="images/mv6.avif" class="img-fluid">
+                    <img src="{% static 'images/mv6.avif' %}" class="img-fluid">
                     <div class="movie-details ">
     
                         <h5 class="movie-title">Oru Kattil Oru Muri</h5>
@@ -507,7 +509,7 @@
         <div class="col-md-12 col-lg-3">
             <a class="text-decoration-none text-black" href="2ndpage.html">
                 <div class="movie-card">
-                    <img src="images/mv1.jpg" alt="Kishkindha Kaandam" class="img-fluid">
+                    <img src="{% static 'images/mv1.jpg' %}" alt="Kishkindha Kaandam" class="img-fluid">
                     <div class="movie-details">
                         <h5 class="movie-title">Kishkindha Kaandam</h5>
                         <p class="movie-genre">Thriller/Drama</p>
@@ -518,7 +520,7 @@
         <div class="col-md-12 col-lg-3">
             <a class="text-decoration-none text-black" href="2ndpage.html">
                 <div class="movie-card">
-                    <img src="images/mv4.jpg" alt="Kishkindha Kaandam" class="img-fluid">
+                    <img src="{% static 'images/mv4.jpg' %}" alt="Kishkindha Kaandam" class="img-fluid">
                     <div class="movie-details ">
                         <h5 class="movie-title">Martin- Part 1</h5>
                         <p class="movie-genre">Drama/Action/Thriller</p>
@@ -529,7 +531,7 @@
         </div>
         <div class="col-md-12 col-lg-3">
             <div class="movie-card">
-                <img src="images/mv5.jpg" alt="Thekku Vadakku" class="img-fluid">
+                <img src="{% static 'images/mv5.jpg' %}" alt="Thekku Vadakku" class="img-fluid">
                 <div class="movie-details">
 
                     <h5 class="movie-title">Bogainvilla</h5>
@@ -550,7 +552,7 @@
       <div class="row justify-content-center text-center text-md-start">
         <div class="col-md-10">
           <p class="text-white" style="white-space: nowrap;">
-            <a href="#" class=" footer-logo text-white fw-bold text-decoration-none"><img src="img/icon1.png" alt="">List your Show &nbsp; &nbsp;</a> 
+            <a href="#" class=" footer-logo text-white fw-bold text-decoration-none"><img src="img/icon1.png' %}" alt="">List your Show &nbsp; &nbsp;</a> 
             Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow 
             <a id="contact"  href="#" class="btn btn-danger ">Contact today! </a>
         </p>
@@ -740,7 +742,7 @@
   </div>
   <div class="line mt-5">
   <hr class="left-line">
-  <img src="images/logo.svg" alt="Logo" class="logo">
+  <img src="{% static 'images/logo.svg' %}" alt="Logo" class="logo">
   <hr class="right-line">
   </div>
   <div class=" social mt-5 d-flex justify-content-center ">

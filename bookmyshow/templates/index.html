@@ -128,13 +128,15 @@
         <b id="text" class="text-black" style="font-size: 1.9vw;">Recommented movies</b>
         <a href="" style="padding-left: 780px;text-decoration: none;color: red;">See All></a>
         <div class="row ">
+
+            {% for movies in movie %}
             <div class="col-md-2">
                 <a href="arm"><img src="{% static 'images/mv2.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
                 <a href="" style="text-decoration: none;color: black;">
                     <figcaption style="padding-left: 30px;"><b>A.R.M</b> <br> U/A <br> Malayalam</figcaption>
                 </a>
             </div>
-            <div class="col-md-2">
+            <!-- <div class="col-md-2">
                 <a href="#"><img src="{% static 'images/mv1.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
                 <a href="" style="text-decoration: none;color: black;">
                     <figcaption style="padding-left: 30px;"><b>Kishkindha Kandam</b> <br> U/A <br> Malayalam
@@ -165,7 +167,7 @@
                     <figcaption style="padding-left: 30px;"><b>Oru Kattil Oru Muri</b> <br> U/A <br> Malayalam
                     </figcaption>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -438,7 +440,7 @@
             </div>
             <div class="line mt-5">
                 <hr class="left-line">
-                <img src="{% static 'images/logo.svg" alt="Logo" class="logo">
+                <img src="{% static 'images/logo.svg' %}" alt="Logo" class="logo">
                 <hr class="right-line">
             </div>
             <div class=" social mt-5 d-flex justify-content-center ">

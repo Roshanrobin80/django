@@ -131,11 +131,13 @@
 
             {% for movies in movie %}
             <div class="col-md-2">
-                <a href="arm"><img src="{% static 'images/mv2.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
+                <a href="view_movie/{{movies.pk}}"><img src="{{movies.for_img.url}}" class="rounded img-fluid m-2" width="100%" alt=""></a>
                 <a href="" style="text-decoration: none;color: black;">
-                    <figcaption style="padding-left: 30px;"><b>A.R.M</b> <br> U/A <br> Malayalam</figcaption>
+                    <figcaption style="padding-left: 30px;"><b>{{movies.name}}</b> <br> {{movies.cert}}<br> {{movies.lang}}</figcaption>
                 </a>
             </div>
+
+            {% endfor %}
             <!-- <div class="col-md-2">
                 <a href="#"><img src="{% static 'images/mv1.jpg' %}" class="rounded img-fluid m-2" width="100%" alt=""></a>
                 <a href="" style="text-decoration: none;color: black;">

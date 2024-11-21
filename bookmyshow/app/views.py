@@ -7,7 +7,8 @@ from django.contrib import messages
 # Create your views here.
 
 def index(req):
-    return render(req,'index.html')
+    data=movie.objects.all()[::-1]
+    return render(req,'index.html',{'movie':data})
 
 def arm(req):
     return render(req,'arm.html')
